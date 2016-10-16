@@ -18,6 +18,7 @@ class TwitterListener(tweepy.StreamListener):
 
     def on_status(self, tweet):
 	print ("Receiving tweet no :"+str(self.line))
+	### Have a counter to limiit the number of tweets , once limit exceeded exit the program. Also write the tweets to a file
 	if self.line < int(self.nolines):
 	   self.file.write(tweet.text.encode('ascii','ignore'))
            self.line = self.line + 1

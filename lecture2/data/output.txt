@@ -1,0 +1,2 @@
+the sentiment of trump :-120
+the sentiment of clinton :-487
